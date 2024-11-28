@@ -1,11 +1,9 @@
 # TODO Найдите количество книг, которое можно разместить на дискете
-ves=1.44
-colv=100
-str=50
-sym=25
-razmer=1024*1024
-cod=4
-
-obem=colv*str*sym*cod/razmer
-kolichestvo=ves//obem
-print("Количество книг, помещающихся на дискету:", round(kolichestvo))
+pages = 100
+strings = 50
+symbols = 25
+weight = 4
+final_weight = pages * strings * symbols * weight / ( 1024 ** 2 )
+amount_of_books = 1.44 / final_weight
+amount_of_books = round (amount_of_books)
+print("Количество книг, помещающихся на дискету:", amount_of_books )
